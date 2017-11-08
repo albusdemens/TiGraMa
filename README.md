@@ -1,2 +1,17 @@
-# TiGraMa
-TiGraMa: a suite of scripts to reconstruct, in 3D, the internal structure of a sample investigated using Time-of-Flight 3D Grain Mapping
+Tigrama
+=========
+
+Copyright 2014-2017, All rights reserved
+
+Technical University of Denmark, Kongens Lyngby, Denmark
+
+Code written by A. Cereser and S. Schmidt
+
+--------------------------
+
+Welcome to Tigrama, a software suite to analyze time-of-flight grain mapping data! The code 
+
+License
+-------
+
+This software is covered by the GNU General Public License.
