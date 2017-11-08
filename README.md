@@ -33,9 +33,7 @@ All the TiGraMa scripts were developed during proof-of-principle data analyses. 
 Reconstruction steps
 --------------------
 
-The reconstruction steps are described in details in <sup>[2](#myfootnote2)</sup>. The Matlab scripts run on versions R2015a - R2017a.  
-
-:exclamation: Before running a script, change the folder paths :exclamation:
+The reconstruction steps are described in details in <sup>[2](#myfootnote2)</sup>. The Matlab scripts run on versions R2015a - R2017a. :exclamation: Before running a script, change the folder paths :exclamation:
 
 0. Preprocess the collected frames. The aim of the steps is to reduce the noise and improve the signal.
 
