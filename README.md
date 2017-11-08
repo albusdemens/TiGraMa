@@ -33,7 +33,9 @@ All the TiGraMa scripts were developed during proof-of-principle data analyses. 
 Reconstruction steps
 --------------------
 
-The reconstruction steps are described in details in <sup>[2](#myfootnote2)</sup>.
+The reconstruction steps are described in details in <sup>[2](#myfootnote2)</sup>. The Matlab scripts run on versions R2015a - R2017a.  
+
+:exclamation: Before running a script, change the folder paths :exclamation:
 
 0. Preprocess the collected frames. The aim of the steps is to reduce the noise and improve the signal.
 
@@ -61,7 +63,9 @@ The reconstruction steps are described in details in <sup>[2](#myfootnote2)</sup
 
 1. Filter the frames using a signal enhancement filter, such as Murofi <sup>[1](#myfootnote1)</sup> (not included in TiGraMa)
 
-2.
+2. Isolate the extinction spots with the desired area. Script: `2_Blobs_detector.m`, which calls `2_Blobs_detector_function.m`
+
+3.
 
 
 References
