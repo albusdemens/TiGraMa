@@ -56,8 +56,6 @@ Reconstruction steps
 1. Filter the frames using a signal enhancement filter, such as Murofi <sup>[1](#myfootnote1)</sup> (not included in TiGraMa)
 
 
-
-
 References
 ----------
 
