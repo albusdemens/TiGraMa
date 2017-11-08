@@ -9,7 +9,7 @@ Code written by A. Cereser and S. Schmidt
 
 --------------------------
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/albusdemens/TiGraMa/blob/master/anim.gif)
 
 --------------------------
 
