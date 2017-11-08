@@ -9,7 +9,7 @@ Code written by A. Cereser and S. Schmidt
 
 --------------------------
 
-Welcome to Tigrama, a software suite to analyze time-of-flight grain mapping data! The code 
+Welcome to Tigrama, a software suite to analyze **ti**me-of-flight **gr**ain **ma**pping data! 
 
 License
 -------
