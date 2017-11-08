@@ -26,29 +26,29 @@ Reconstruction steps
 
 0. Preprocess the collected frames. The aim of the steps is to reduce the noise and improve the signal.
 
-  0.1. Perform [overlap correction][1] using a dead-time correction algorithm.
+⋅⋅0.1. Perform [overlap correction][1] using a dead-time correction algorithm.
 
-  The code to perform the overlap correction was originally developed by A. Tremsin for the Windows platform, and has been ported to Unix by P.M. Larsen. To run it on a Mac, you need to
+The code to perform the overlap correction was originally developed by A. Tremsin for the Windows platform, and has been ported to Unix by P.M. Larsen. To run it on a Mac, you need to
 
-    * Install [Homebrew][2] or another package manager;
+⋅⋅⋅* Install [Homebrew][2] or another package manager;
 
-    * On a terminal, launch `brew install cfitsio`;
+⋅⋅⋅* On a terminal, launch `brew install cfitsio`;
 
-    * From the `linux_correction` folder, compile the code using `make clean && make`;
+⋅⋅⋅* From the `linux_correction` folder, compile the code using `make clean && make`;
 
-    * Run `./fits_correction source_folder/example_file.fits destination_folder`
+⋅⋅⋅* Run `./fits_correction source_folder/example_file.fits destination_folder`
 
-  To use the code from a Linux computer, it should be enough to change the path to `cfitsio` in the `Makefile` and in the `.h` files, and `clang++` to `g++`. 
+  To use the code from a Linux computer, it should be enough to change the path to `cfitsio` in the `Makefile` and in the `.h` files, and `clang++` to `g++`.
 
-  0.2. Calculate, from the open beam collected before and after the measurements, the open beam for the considered projection. Script: `Estimate_OB_no_median.m`
-
-
-  0.3. Divide the collected dataset by the corresponding open beam. Script: `OB_correction.m`, which calls `OB_correction_function.m`
-
-  0.4. Normalise using a rolling median. Code: `Correction_background.m`, which calls `Correction_background_function.m`
+⋅⋅0.2. Calculate, from the open beam collected before and after the measurements, the open beam for the considered projection. Script: `Estimate_OB_no_median.m`
 
 
-  Step 0.1 should run on a laptop (with data on an external drive) before uploading data to a server, where the more computationally consuming steps (0.2 to 0.4) run using Matlab.
+⋅⋅0.3. Divide the collected dataset by the corresponding open beam. Script: `OB_correction.m`, which calls `OB_correction_function.m`
+
+⋅⋅0.4. Normalise using a rolling median. Code: `Correction_background.m`, which calls `Correction_background_function.m`
+
+
+⋅⋅Step 0.1 should run on a laptop (with data on an external drive) before uploading data to a server, where the more computationally consuming steps (0.2 to 0.4) run using Matlab.
 
 1. Then filter the frames using a signal enhancement filter, such as Murofi, described in <sup>[1](#myfootnote1)</sup>. The Murofi script is not included in TiGraMa.
 
