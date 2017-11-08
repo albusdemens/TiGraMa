@@ -50,7 +50,7 @@ Reconstruction steps
 
    Step 0.1 should run on a laptop (with data on an external drive) before uploading data to a server, where the more computationally consuming steps (0.2 to 0.4) run using Matlab.
 
-1. Then filter the frames using a signal enhancement filter, such as Murofi, described in <sup>[1](#myfootnote1)</sup>. The Murofi script is not included in TiGraMa.
+1. Filter the frames using a signal enhancement filter, such as Murofi <sup>[1](#myfootnote1)</sup> (not included in TiGraMa)
 
 
 
