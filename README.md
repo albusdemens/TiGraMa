@@ -31,7 +31,7 @@ Reconstruction steps
 
 0. Preprocess the collected frames. The aim of the steps is to reduce the noise and improve the signal.
 
-   0.1. Perform [overlap correction][1] using a dead-time correction algorithm.
+   0.1. Perform ![overlap correction](http://iopscience.iop.org/article/10.1088/1748-0221/9/05/C05026/meta) using a dead-time correction algorithm.
 
    The code to perform the overlap correction was originally developed by A. Tremsin for the Windows platform, and has been ported to Unix by P.M. Larsen. To run it on a Mac, you need to
 
@@ -69,3 +69,6 @@ License
 -------
 
 This software is covered by the GNU General Public License.
+
+
+[1]: http://stacks.iop.org/1748-0221/9/i=05/a=C05026?key=crossref.88229b2d88c5ffd1bc62280555bdb4a1
