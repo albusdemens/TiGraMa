@@ -33,6 +33,8 @@ All the TiGraMa scripts were developed during proof-of-principle data analyses. 
 Reconstruction steps
 --------------------
 
+The reconstruction steps are described in details in <sup>[2](#myfootnote2)</sup>.
+
 0. Preprocess the collected frames. The aim of the steps is to reduce the noise and improve the signal.
 
    0.1. Perform ![overlap correction](http://iopscience.iop.org/article/10.1088/1748-0221/9/05/C05026/meta) using a dead-time correction algorithm.
@@ -58,6 +60,8 @@ Reconstruction steps
    Step 0.1 should run on a laptop (with data on an external drive) before uploading data to a server, where the more computationally consuming steps (0.2 to 0.4) run using Matlab.
 
 1. Filter the frames using a signal enhancement filter, such as Murofi <sup>[1](#myfootnote1)</sup> (not included in TiGraMa)
+
+2.
 
 
 References
