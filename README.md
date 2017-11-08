@@ -9,6 +9,10 @@ Code written by A. Cereser and S. Schmidt
 
 --------------------------
 
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
+--------------------------
+
 Welcome to TiGraMa, a software suite to analyze **Ti**me-of-flight **Gr**ain **Ma**pping data collected using time-of-flight 3D neutron diffraction (ToF 3DND)<sup>[1](#myfootnote1),[2](#myfootnote2)</sup>.
 
 All software was developed analyzing software collected at J-PARC, beamline ID06 (SENJU).
