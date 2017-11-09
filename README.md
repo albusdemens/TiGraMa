@@ -97,7 +97,7 @@ Approximately, the number of extinction spots per projection should be the same
 
    * Output: `CM_alpha_R.txt`
 
-   <img src=Structure_scripts_HT.png height=100 />
+   <img src=Structure_scripts_HT.png height=200 />
 
 References
 ----------
