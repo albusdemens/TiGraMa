@@ -5,7 +5,7 @@
 
 % Version for blobs with I in [100, 2000]
 
-function Blobs_similarity_function(Omega, percent_size)
+function 4_Blobs_similarity_function(Omega, percent_size)
 
 num_blobs = 0;
 
@@ -60,7 +60,7 @@ for shape_n = 3:nfiles_true
         dist_centroids = sqrt((centroid_n(1) - centroid_m(1))^2 + (centroid_n(2) - centroid_m(2))^2);
         if dist_centroids < 50  % 50 for small blobs, 100 for the big ones
 
-            [angular_diff, angular_diff_1, angular_diff_2] = Shape_comparison_function(shape_n, shape_m, Int, A, A_dil, A_er, s, numBins);
+            [angular_diff, angular_diff_1, angular_diff_2] = 4_Shape_comparison_function(shape_n, shape_m, Int, A, A_dil, A_er, s, numBins);
 
             if angular_diff < 45
                 if angular_diff_1 < 45 && angular_diff_2 > 315

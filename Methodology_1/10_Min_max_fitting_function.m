@@ -4,7 +4,7 @@
 % Function to find the min and max of the fitting sinuosoidal functions found in
 % Function_HT_section_Murofi_split
 
-function [min_f, max_f] = Min_max_fitting_function(num_CM_considered, alpha_fit, R_fit, center)
+function [min_f, max_f] = 10_Min_max_fitting_function(num_CM_considered, alpha_fit, R_fit, center)
 
 f = zeros(num_CM_considered, 180);
 for xx = 1:num_CM_considered

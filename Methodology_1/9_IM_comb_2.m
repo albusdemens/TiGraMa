@@ -21,7 +21,7 @@ fid = fopen('Image_combination_before_HT.txt', 'wt');
 
 for Omega = 1:6:181  % This is the projection number. The first proj
                     % corresponds to 0 degrees
-    Funct_im_comb_2(Omega - 1, Data, rad, fid);
+    9_Funct_im_comb_2(Omega - 1, Data, rad, fid);
 end
 fclose(fid);
 

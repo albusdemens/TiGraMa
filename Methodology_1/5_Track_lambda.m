@@ -8,7 +8,7 @@ close; clear all;
 fid = fopen('Lambda_IM_before_HT.txt', 'wt');
 list_n = 0;
 for Omega = 1:49
-    [list_n] = Track_lambda_function(Omega, list_n, fid);
+    [list_n] = 5_Track_lambda_function(Omega, list_n, fid);
 end
 fclose(fid);
 

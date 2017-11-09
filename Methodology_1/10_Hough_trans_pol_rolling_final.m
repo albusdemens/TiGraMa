@@ -27,5 +27,5 @@ y_max = round(max(Y));
 
 % Calculate the HT for the different X sections
 for vv = (x_min + ((step_size-1)/2)):(x_max - ((step_size-1)/2))
-    Funct_HT_pol_rolling_final(vv, step_size, Data_blobs);
+    10_Funct_HT_pol_rolling_final(vv, step_size, Data_blobs);
 end

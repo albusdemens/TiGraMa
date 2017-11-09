@@ -11,5 +11,5 @@ clear; close all;
 percent_size = 0.2;
 
 for Omega = 1:49
-    Blobs_similarity_function(Omega, percent_size);
+    4_Blobs_similarity_function(Omega, percent_size);
 end

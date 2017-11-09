@@ -5,7 +5,7 @@
 % Function to clean, for each projection, the set of combined images before
 % the HT
 
-function Funct_im_comb_2(Omega, Data, rad, fid)
+function 9_Funct_im_comb_2(Omega, Data, rad, fid)
 
 line_num = 0;
 % Image size
@@ -212,7 +212,7 @@ for ww = 1:num_groups_clean
         end
     end
     % Fill holes and avoid disconnected pixels; find area and CM
-    [biggest_blob, Area_comb, X_comb, Y_comb] = Funct_clean_blobs(IM_comb_final);
+    [biggest_blob, Area_comb, X_comb, Y_comb] = 9_Funct_clean_blobs(IM_comb_final);
 
     output = sprintf('Comb_blobs_temp/Comb_final_%03i_%03i.png', Omega, ww);
     imwrite(biggest_blob, output);
@@ -297,7 +297,7 @@ if nnz(Final_data_clean) > 0
         end
         % Fill holes and avoid disconnected pixels; find CM and area
         if nnz(IM_comb_tot_final) > 0
-            [IM_final_clean, Area_fin, X_fin, Y_fin] = Funct_clean_blobs(IM_comb_tot_final);
+            [IM_final_clean, Area_fin, X_fin, Y_fin] = 9_Funct_clean_blobs(IM_comb_tot_final);
             Data_final_comb(gg, :) = [Omega, gg, X_fin, Y_fin, Area_fin];
             % Tag combined images in Label_matrix_comb
             for hh = 2:num_im_line

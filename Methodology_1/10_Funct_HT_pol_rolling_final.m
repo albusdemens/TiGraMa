@@ -4,7 +4,7 @@
 
 % Developed for Hough_trans_pol_rolling_Murofi.m
 
-function Function_HT_pol_rolling_final(vv, step_size, Data_blobs)
+function 10_Function_HT_pol_rolling_final(vv, step_size, Data_blobs)
 num_el = numel(Data_blobs(:,1));
 center = 48;
 
@@ -58,7 +58,7 @@ for uu = 1:num_el
     end
 end
 disp(vv);
-[Data_with_CM] = Funct_HT_sec_Murofi_final(...
+[Data_with_CM] = 10_Funct_HT_sec_Murofi_final(...
     Tagged_matrix_clean,threshold,threshold_distance_fit,...
     min_points,y_min, y_max, vv);
 dlmwrite(output, Data_with_CM,'-append','delimiter','\t','precision',5);

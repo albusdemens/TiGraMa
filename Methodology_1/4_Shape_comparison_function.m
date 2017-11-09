@@ -3,7 +3,7 @@
 
 % To speed up Blobs_similarity_Panda_function, we divide it in functions
 
-function [angular_diff, angular_diff_1, angular_diff_2] = Shape_comparison_function(shape_n, shape_m, Int, A, A_dil, A_er, s, numBins)
+function [angular_diff, angular_diff_1, angular_diff_2] = 4_Shape_comparison_function(shape_n, shape_m, Int, A, A_dil, A_er, s, numBins)
 
 I_1 = Int(shape_n,1);
 IM_1 = int8(A{1, shape_n});

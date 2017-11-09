@@ -4,7 +4,7 @@
 % Function to group blobs, using the list of lambda values from list_minima_1000_NN.txt
 % where we have parameters of blobs compoared using angular parameters
 
-function [list_n] = Track_lambda_function(Omega, list_n, fid)
+function [list_n] = 5_Track_lambda_function(Omega, list_n, fid)
 
 Omega = Omega - 1;
 

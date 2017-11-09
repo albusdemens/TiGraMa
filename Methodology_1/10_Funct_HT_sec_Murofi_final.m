@@ -5,7 +5,7 @@
 % Variations of Hough_trans_pol, written to consider separately different
 % regions of the XY CM distribution. Points divided along X using a rolling median
 
-function [Data_with_CM] = Funct_HT_sec_Murofi_final(Tagged_matrix_clean,...
+function [Data_with_CM] = 10_Funct_HT_sec_Murofi_final(Tagged_matrix_clean,...
     threshold,threshold_distance_fit,min_points, y_min, y_max, center_interval)
 
 % Let's start by reading in the data
@@ -64,7 +64,7 @@ for tag = 1:num_tags
     Angle_big_spots = Angle(ID_big);
     num_big = size(ID_big,1);
     [number_centers_big, tagged_points_big, alpha_big, R_big] = ...
-        Funct_Hough_split_final(Y_big_spots, Angle_big_spots, ...
+        10_Funct_Hough_split_final(Y_big_spots, Angle_big_spots, ...
         center, n_large_pixels, num_big, steps_alpha, steps_size, ...
         threshold, threshold_distance_fit);
 
@@ -89,7 +89,7 @@ for tag = 1:num_tags
     alpha_R = zeros(num_CM_big, 2);
 
     if num_CM_big > 0
-        [min_f, max_f] = Min_max_fitting_function(num_CM_big, alpha_big, R_big, center);
+        [min_f, max_f] = 10_Min_max_fitting_function(num_CM_big, alpha_big, R_big, center);
         for ae = 1:num_CM_big
             % Keep only fitting curves that don't go too far from the
             % considered values

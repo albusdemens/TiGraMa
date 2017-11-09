@@ -4,7 +4,7 @@
 % This script locates the different extinction spots in a bw image, selects
 % the ones with area bigger then a threshold value and saves them.
 
-function Blobs_detector_function(Omega, Lambda)
+function 2_Blobs_detector_function(Omega, Lambda)
 frame_size = 30;            % Size of the frame used to clean the image from noisy points
 area_threshold = 100;       % We are interested in blobs with at least this number of pixels
 area_threshold_max = 2000;  % Max num of pixels

@@ -7,6 +7,6 @@
 for Omega = 1:180
     % Select desired wavelength intervals
     for Lambda = 25:2391
-        Blobs_detector_function(Omega, Lambda);
+        2_Blobs_detector_function(Omega, Lambda);
     end
 end

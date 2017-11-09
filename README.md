@@ -91,13 +91,23 @@ Approximately, the number of extinction spots per projection should be the same
 
 10. Considering a rolling interval, group the extinction spots using the Hough transform.
 
-   * Scripts:
+   * Scripts: `10_Hough_trans_pol_rolling_final.m`, `10_Funct_HT_pol_rolling_final.m`, `10_Funct_HT_sec_Murofi_final.m`, `10_Funct_Hough_split_final.m`, `10_Min_max_fitting_function.m`. Structure:
+
+   <img src=Structure_scripts_HT.png height=200 />
 
    * At first, look at the point distribution using `10_Funct_HT_sec_Murofi_final.m` and tune the parameters. Then comment the figure option and run for all intervals
 
    * Output: `CM_alpha_R.txt`
 
-   <img src=Structure_scripts_HT.png height=200 />
+11. Clean the results of the Hough transform, grouping the centre of mass values. In this way, we determine the centre of mass of the grains and group the corresponding combined extinction spots.
+
+   * Scripts: `Point_grouping_to_3D.m`, which calls `Plot_and_group_CM_Murofi.m`, `Clean_result_HT.m` and `Comb_im_before_reconstr.m`
+
+   * Output: `3D_reconstr_input.txt`, `Cleaned_results_HT.txt` and `CM_clusters_final.txt`
+
+12. Reconstruct the 3D shape of the grains. Script: `12_Voxels_tagging_final_P.m`
+
+13. Visualize the reconstructed volume. 
 
 References
 ----------

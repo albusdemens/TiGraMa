@@ -4,7 +4,7 @@
 % Simple function that fills holes in a blob and cleans disconnected
 % pixels. To be used after combining images
 
-function [biggest_blob, Area_comb, X_CM, Y_CM] = Funct_clean_blobs(IM)
+function [biggest_blob, Area_comb, X_CM, Y_CM] = 9_Funct_clean_blobs(IM)
 
 % Fill holes and avoid disconnected pixels
 IM_filled = imfill(IM, 'holes');
