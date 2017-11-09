@@ -93,7 +93,7 @@ Approximately, the number of extinction spots per projection should be the same
 
    * Scripts: `10_Hough_trans_pol_rolling_final.m`, `10_Funct_HT_pol_rolling_final.m`, `10_Funct_HT_sec_Murofi_final.m`, `10_Funct_Hough_split_final.m`, `10_Min_max_fitting_function.m`. Structure:
 
-   <img src=Structure_scripts_HT.png height=200 />
+   <center><img src=Structure_scripts_HT.png height=200 /></center>
 
    * At first, look at the point distribution using `10_Funct_HT_sec_Murofi_final.m` and tune the parameters. Then comment the figure option and run for all intervals
 
@@ -107,7 +107,7 @@ Approximately, the number of extinction spots per projection should be the same
 
 12. Reconstruct the 3D shape of the grains. Script: `12_Voxels_tagging_final_P.m`
 
-13. Visualize the reconstructed volume. 
+13. Visualize the reconstructed volume.
 
 References
 ----------
