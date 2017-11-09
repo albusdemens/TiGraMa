@@ -107,7 +107,15 @@ Approximately, the number of extinction spots per projection should be the same
 
 12. Reconstruct the 3D shape of the grains. Script: `12_Voxels_tagging_final_P.m`
 
-13. Visualize the reconstructed volume using [Paraview](https://www.paraview.org/). For a quick introduction to how to visualize volumes using Paraview, see Sec. 1.4.4 of the [Recon3D manual](https://github.com/albusdemens/Recon3D/blob/master/Manual_Recon3D.pdf). 
+13. Visualize the reconstructed volume using [Paraview](https://www.paraview.org/). For a quick introduction to how to visualize volumes using Paraview, see Sec. 1.4.4 of the [Recon3D manual](https://github.com/albusdemens/Recon3D/blob/master/Manual_Recon3D.pdf).
+
+Contributions
+-------------
+Feel free to download TiGraMa and use it to analyze your dataset. If you spot a bug, send an email to alberto.cereser@gmail.com or flag it here on GitHub.
+
+How to quote the code
+---------------------
+TiGraMa is a scientific software package, and it is important to reference it. You can refer to the article presenting ToF 3DND: A. Cereser, M. Strobl, S. A. Hall, A. Steuwer, R. Kiyanagi, A. S. Tremsin, E. Bergbäck Knudsen, T. Shinohara, P. K. Willendrup, A. Bastos da Silva Fanta, S. Iyengar, P. M. Larsen, T. Hanashima, T. Moyoshi, P. M. Kadletz, P. Krooß, T. Niendorf, M. Sales, W. W. Schmahl & S. Schmidt (2017). “Time-of-Flight Three Dimensional Neutron Diffraction in Transmission Mode for Mapping Crystal Grain Structures.” Scientific Reports 7 (1): 9561, 9561. doi:[10.1038/s41598-017-09717-w](https://www.nature.com/articles/s41598-017-09717-w).
 
 References
 ----------
