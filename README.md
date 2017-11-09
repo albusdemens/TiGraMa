@@ -115,7 +115,7 @@ Feel free to download TiGraMa and use it to analyze your dataset. If you spot a 
 
 How to quote the code
 ---------------------
-TiGraMa is a scientific software package, and it is important to reference it. You can refer to the article presenting ToF 3DND: *A. Cereser, M. Strobl, S. A. Hall, A. Steuwer, R. Kiyanagi, A. S. Tremsin, E. Bergbäck Knudsen, T. Shinohara, P. K. Willendrup, A. Bastos da Silva Fanta, S. Iyengar, P. M. Larsen, T. Hanashima, T. Moyoshi, P. M. Kadletz, P. Krooß, T. Niendorf, M. Sales, W. W. Schmahl & S. Schmidt (2017). “Time-of-Flight Three Dimensional Neutron Diffraction in Transmission Mode for Mapping Crystal Grain Structures.” Scientific Reports 7 (1): 9561, 9561. doi:[10.1038/s41598-017-09717-w](https://www.nature.com/articles/s41598-017-09717-w).*
+TiGraMa is a scientific software package, and it is important to reference it. Please refer to the article presenting ToF 3DND<sup>[1](#myfootnote1)</sup>.
 
 References
 ----------
