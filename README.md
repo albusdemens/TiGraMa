@@ -35,7 +35,7 @@ Reconstruction steps
 
 The reconstruction steps are described in details in <sup>[2](#myfootnote2)</sup>. The Matlab scripts run on versions R2015a - R2017a. :exclamation: Before running a script, change the folder paths :exclamation:
 
-*Grain shape reconstruction*
+**Grain shape reconstruction**
 
 0. Preprocess the collected frames. The aim of the steps is to reduce the noise and improve the signal.
 
@@ -113,7 +113,7 @@ Approximately, the number of extinction spots per projection should be the same
 
 Scripts: `13_Plot_3D_voxels.m` and  `13_Slides_to_vtk.m`. If you are using the _matryoshka doll approach_, use `13_Count_grains.m` instead.
 
-*Grain orientation*
+**Grain orientation**
 
 14. For all reconstructed grains, get (omega, lambda) values of the corresponding extinction spots. Scripts: `14_OL_curves_final.m`, which calls `14_OL_curves_fnct.m`, and `14_Unify_OL_values.m`. Final output: `OL_final_cleared.txt`
 
