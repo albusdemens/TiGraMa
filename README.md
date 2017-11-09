@@ -109,13 +109,17 @@ Approximately, the number of extinction spots per projection should be the same
 
 13. Visualize the reconstructed volume using [Paraview](https://www.paraview.org/). For a quick introduction to how to visualize volumes using Paraview, see Sec. 1.4.4 of the [Recon3D manual](https://github.com/albusdemens/Recon3D/blob/master/Manual_Recon3D.pdf).
 
+Scripts: `13_Plot_3D_voxels.m` and  `13_Slides_to_vtk.m`. If you are using the _matryoshka doll approach_, use `13_Count_grains.m` instead.
+
+14. 
+
 Contributions
 -------------
 Feel free to download TiGraMa and use it to analyze your dataset. If you spot a bug, send an email to alberto.cereser@gmail.com or flag it here on GitHub.
 
 How to quote the code
 ---------------------
-TiGraMa is a scientific software package, and it is important to reference it. Please refer to the article presenting ToF 3DND<sup>[1](#myfootnote1)</sup>.
+TiGraMa is a scientific software package and if you use it for your research work you should reference it. Please refer to the article presenting ToF 3DND<sup>[1](#myfootnote1)</sup>.
 
 References
 ----------

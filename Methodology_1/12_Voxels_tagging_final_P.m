@@ -114,6 +114,6 @@ for i = (1:n_voxels_z)
             end
         end
     end
-    IM_layer = sprintf('/Grain_reconstruction/Grain_reconstruction_NN/Final_shape_Fe_%03i.fits', i);
+    IM_layer = sprintf('/Grain_reconstruction/Final_shape_Fe_%03i.fits', i);
     fitswrite(tag, IM_layer);
 end
