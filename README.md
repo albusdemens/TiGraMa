@@ -35,6 +35,8 @@ Reconstruction steps
 
 The reconstruction steps are described in details in <sup>[2](#myfootnote2)</sup>. The Matlab scripts run on versions R2015a - R2017a. :exclamation: Before running a script, change the folder paths :exclamation:
 
+*Grain shape reconstruction*
+
 0. Preprocess the collected frames. The aim of the steps is to reduce the noise and improve the signal.
 
    0.1. Perform ![overlap correction](http://iopscience.iop.org/article/10.1088/1748-0221/9/05/C05026/meta) using a dead-time correction algorithm.
@@ -111,7 +113,17 @@ Approximately, the number of extinction spots per projection should be the same
 
 Scripts: `13_Plot_3D_voxels.m` and  `13_Slides_to_vtk.m`. If you are using the _matryoshka doll approach_, use `13_Count_grains.m` instead.
 
-14. 
+*Grain orientation*
+
+14. For all reconstructed grains, get (omega, lambda) values of the corresponding extinction spots. Scripts: `14_OL_curves_final.m`, which calls `14_OL_curves_fnct.m`, and `14_Unify_OL_values.m`. Final output: `OL_final_cleared.txt`
+
+15. Calculate the centre of mass of the grains. Script: `15_HT_orientation_sections.m`, which calls `15_F_count_points_cleaned.m`, `15_Funct_acc_matrix.m` and `15_Funct_fit_HT.m`. Output: `Final_grains_CM.txt`
+
+16. Print in a file the properties of the isolated extinction spots images. Script: `16_Isolated_images_properties.m`. Output: `Properties_isolated_blobs.txt`
+
+17. Clean the (omega, lambda) list, keeping only the values relative to images containing the CM of the corresponding grain. Code: `OL_values_grain_CM.m`, output: `OL_final_OK.txt`
+
+18. Calculate the grain orientation from the distribution of (omega, lambda) values. Script: `Save_omega_lambda_fit.m`, calling `Plot_omega_lambda_single_grain.m` and `indexToF.m`
 
 Contributions
 -------------
