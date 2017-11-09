@@ -107,7 +107,7 @@ Approximately, the number of extinction spots per projection should be the same
 
 12. Reconstruct the 3D shape of the grains. Script: `12_Voxels_tagging_final_P.m`
 
-13. Visualize the reconstructed volume.
+13. Visualize the reconstructed volume using [Paraview](https://www.paraview.org/). For a quick introduction to how to visualize volumes using Paraview, see Sec. 1.4.4 of the [Recon3D manual] (https://github.com/albusdemens/Recon3D/blob/master/Manual_Recon3D.pdf). 
 
 References
 ----------
