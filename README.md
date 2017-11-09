@@ -63,7 +63,9 @@ The reconstruction steps are described in details in <sup>[2](#myfootnote2)</sup
 
 2. Isolate the extinction spots with the desired area. Script: `2_Blobs_detector.m`, which calls `2_Blobs_detector_function.m`
 
-3.
+*The next steps are computationally intensive. You should probably transfer your data to a HPC machine*
+
+3. Divide the blobs by projection 
 
 
 References
