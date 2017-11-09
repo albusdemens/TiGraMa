@@ -21,9 +21,9 @@ TiGraMa can analyze data collected using the two ToF 3DND methodologies:
 
   - Methodology 1, with which data are collected by an imaging detector with high spatial and temporal resolution, mounted in transmission
 
-  - Methodology 2, with which data are collected by both an imaging detector mounted in transmission and my diffraction detector banks
+  - Methodology 2, with which data are collected by both an imaging detector mounted in transmission and by diffraction detector banks
 
-_In the current version, only Methodology 1 is supported. The support to Methodology 2 will be added in a later version._
+_In the current version, only Methodology 1 is supported_
 
 Practical considerations
 ------------------------
