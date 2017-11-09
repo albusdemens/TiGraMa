@@ -45,7 +45,7 @@ for ii = 3:nfiles
 end
 
 % Write to a text file the info about all the blobs
-file_blobs = fopen(sprintf('Results_blobs_comp/Results_100/Map_blobs/map_blobs_100_%02i.txt', Omega-1),'w');
+file_blobs = fopen(sprintf('Results_blobs_comp/Results/Map_blobs/map_blobs_%02i.txt', Omega-1),'w');
 fprintf(file_blobs,'%4d %4d %2d %5d\n',Int');
 
 % Check if the two blobs have similar shape
@@ -78,4 +78,4 @@ end
 % Clear the matrix
 Comparison_list( ~any(Comparison_list,2), : ) = [];
 
-dlmwrite(sprintf('Results_blobs_comp/Results_100/List_minima/list_minima_100_%02i.txt', Omega-1),Comparison_list, 'delimiter',' ', 'precision', 6);
+dlmwrite(sprintf('Results_blobs_comp/Results/List_minima/list_minima_%02i.txt', Omega-1),Comparison_list, 'delimiter',' ', 'precision', 6);

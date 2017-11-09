@@ -4,11 +4,11 @@
 % Function to group blobs, using the list of lambda values from list_minima_1000_NN.txt
 % where we have parameters of blobs compoared using angular parameters
 
-function [list_n] = Track_lambda_Panda_function(Omega, list_n, fid)
+function [list_n] = Track_lambda_function(Omega, list_n, fid)
 
 Omega = Omega - 1;
 
-filename = sprintf('/data/alcer/Data_analysis/Reconstruction_Murofi/Fe_2015/Isolated_blobs_1000_pr/List_minima/list_minima_1000_%02i.txt', Omega);
+filename = sprintf('Results_blobs_comp/Results/List_minima/list_minima_%02i.txt', Omega);
 delimiterIn = ' ';
 A = importdata(filename,delimiterIn);
 L = size(A,1);
@@ -193,7 +193,7 @@ for aa = 1:num_lt_pos
 end
 
 % Load the file mapping image number with lambda values
-file_map = sprintf('/data/alcer/Data_analysis/Reconstruction_Murofi/Fe_2015/Isolated_blobs_1000_pr/Map_blobs/map_blobs_1000_%02i.txt', Omega);
+file_map = sprintf('Results_blobs_comp/Results/Map_blobs/map_blobs_%02i.txt', Omega);
 delimiterIn = ' ';
 Map = importdata(file_map,delimiterIn);
 
@@ -207,7 +207,7 @@ for dd = 1:num_lt_pos      % Separately consider each tag
         [r_map, c_map] = find(Map(:,1) == image_number);
         lam = Map(r_map, 2);
         blob_idx = Map(r_map, 3);
-        path_image = sprintf('/data/alcer/Data_analysis/Reconstruction_Murofi/Fe_2015/Isolated_blobs_1000_pr/Isolated_blobs_1000_%02i/Isolated_blob_%03i_%05i_%02i.png', Omega, Omega, lam, blob_idx);
+        path_image = sprintf('Isolated_blobs/Isolated_blobs_%02i/Isolated_blob_%03i_%05i_%02i.png', Omega, Omega, lam, blob_idx);
         IM = double(imread(path_image));
         maxPixelValue = mean(IM(IM>0)); % find the maximum; min not working
         minPixelValue = min(min(IM)); % find the minimum
@@ -228,7 +228,7 @@ for dd = 1:num_lt_pos      % Separately consider each tag
     biggest_blob = double(IM_L==ind);
 
     % Save the final result
-    output = sprintf('/data/alcer/Data_analysis/Reconstruction_Murofi/Fe_2015/Comb_blobs/Comb_blob_%03i_%02i.png', Omega, Im_per_tag(dd,1));
+    output = sprintf('Comb_blobs/Comb_blob_%03i_%02i.png', Omega, Im_per_tag(dd,1));
     imwrite(biggest_blob, output);
 end
 

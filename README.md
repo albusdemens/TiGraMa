@@ -65,8 +65,39 @@ The reconstruction steps are described in details in <sup>[2](#myfootnote2)</sup
 
 *The next steps are computationally intensive. You should probably transfer your data to a HPC machine*
 
-3. Divide the blobs by projection 
+3. Divide the blobs by projection using `3_Divide_blobs_proj.sh` or something similar
 
+4. For each projection, calculate the similarity between different blobs.
+
+   * Scripts: `4_Blobs_similarity.m`, which calls `4_Blobs_similarity_function.m`  and `4_Shape_comparison_function.m`
+
+   * Output: files in `Results_blobs_comp/`. There are two types of output: the files in `Map_blobs/` list the properties of the blobs, and the files in `List_minima/` list the parameters used to measure how similar two blobs are
+
+5. Using the angular parameters in `List_minima/` combine similar blobs using `5_Track_lambda.m`, which calls `5_Track_lambda_function.m`. Output: `Lambda_IM_before_HT.txt`, listing the properties of the combined images, and the combined images, stored in `Comb_blobs/`
+
+Approximately, the number of extinction spots per projection should be the same
+
+6. Separate the combined images in folders (one per projection) using `6_commands_sim_diff_lambda.sh`
+
+7. Export the information relative to the images in `Comb_blobs/` using `7_Extract_data_Comb_blobs.m`. Output: `Data_blobs.txt`
+
+8. Plot the distribution of the number of extinction spots per projection. Script: `8_Plot_blobs_distr.m`
+
+9. Clean the set of combined images by considering the centre of mass of the combined extinction spots. This is done by considering a series of cylinders, and for each cylinder combining the spots within it that have similar area (A_min > 0.5*A_max). Additional operations are performed to avoid repetitions
+
+   * Scripts: `9_IM_comb_2.m`, which calls `9_Funct_im_comb_2.m` and `9_Funct_clean_blobs.m`
+
+   * Output: `Data_blobs_final.txt` and `Image_combination_before_HT.txt`
+
+10. Considering a rolling interval, group the extinction spots using the Hough transform.
+
+   * Scripts:
+
+   * At first, look at the point distribution using `10_Funct_HT_sec_Murofi_final.m` and tune the parameters. Then comment the figure option and run for all intervals
+
+   * Output: `CM_alpha_R.txt`
+
+   ![GitHub Logo](Structure_scripts_HT.png)
 
 References
 ----------
